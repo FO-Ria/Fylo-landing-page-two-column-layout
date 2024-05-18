@@ -1,0 +1,271 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open sans',  sans-serif;
+    line-height: 1.6;
+    color: hsl(228, 22%, 44%);
+}
+h1,h2 {
+    font-size: 36px;
+    color: hsl(243, 87%, 12%);
+    font-family: 'Raleway', sans-serif;
+}
+p {
+    font-size: 16px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: white;
+}
+
+.logo {
+    width: 120px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: hsl(243, 87%, 12%);
+    font-weight: 500;
+    font-family: 'Raleway';
+}
+
+.container {
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    padding: 2.5em;
+    gap: 2em;
+    line-height: 1.8;
+}
+
+.container content {
+    max-width: 60%;
+    gap: 2em;
+}
+
+.container content h2 {
+    margin-bottom: 20px;
+    line-height: 0.8;
+}
+
+.container content p {
+    margin-bottom: 20px;
+}
+
+.first-form {
+    display: flex;
+}
+
+.first-form input {
+    padding: 10px;
+    border: 1px solid ;
+    border-radius: 5px;
+    flex: 1;
+    color: hsl(0, 0%, 75%);
+}
+
+.first-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: hsl(224, 97%, 58%);
+    color: white;
+    cursor: pointer;
+}
+
+
+.illustration-1 img {
+    width: 100%;
+    height: auto;
+    max-width: 700px;
+    padding: 0;
+
+}
+
+
+.second{
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    padding: 1.5em;
+    gap: 2em;
+    line-height: 1.8;
+}
+
+.second-container {
+    max-width: 60%;
+    gap: 2em;
+}
+.second h2 {
+    margin-bottom: 20px;
+}
+
+.second p {
+    margin-bottom: 20px;
+}
+.illustration-2 {
+    width: 70%;
+    max-width: 500px;
+} 
+.illustration-2 img {
+    width: 70%;
+    height: auto;
+    max-width: 700px;
+    padding: 0;
+}
+.quote img  {
+    width: 20%;
+}
+.fyloworks {
+    color: hsl(243, 87%, 12%);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 40px;
+}
+
+.fyloworks img {
+    width: 20%;
+    border-radius: 60%;
+
+}
+
+.third {
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    background: hsl(228, 22%, 44%);
+    color: #fff;
+    padding: 50px 30px;
+    margin: 0, 1em 0 1.5em;
+    
+}
+
+.third h2 {
+    margin-bottom: 20px;
+}
+
+.third p {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.third form {
+    display: flex;
+    gap: 10px;
+    justify-content: left;
+}
+
+.third form input {
+    width: 250px;
+    height: 40px;
+    padding: 10px;
+    border: 1px ;
+    border-radius: 5px;
+    flex: 1;
+}
+
+.third form button {
+    width: 200px;
+    height: 40px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: hsl(224, 97%, 58%);
+    color: white;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background: hsl(243, 87%, 12%);
+    color: white;
+    padding: 60px 40px;
+    gap: 2em;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer div {
+    display: flex;
+    align-items: center;
+}
+.about {
+    text-align: justify;
+    margin: auto;
+    width: 50%;
+}
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container .content {
+        max-width: 100%;
+    }
+
+    .container .illustration-1 {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .first-form {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .third form {
+        flex-direction: column;
+        gap: 10px;
+    }
+    button {
+        width: 80px;
+        height: 25px;
+}
+input {
+    width: 100px;
+    height: 20px;
+}
+    footer div {
+        flex-direction: column;
+        text-align: center;
+    }
+}
